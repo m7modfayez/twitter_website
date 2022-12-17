@@ -1,0 +1,31 @@
+.twitter-head{
+    text-align: center;
+    margin-top: 30px;
+    font: size 30px;
+}
+
+div.login{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 29%;
+    background-color: rgb(253, 253, 253);
+    border-radius: 20px;
+    height: 600px;
+}
+
+div.sign{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: black;
+    font-size: small;
+    float: left;
+}
+div.sign:hover {
+    background-color:rgb(198, 199, 202);
+}
