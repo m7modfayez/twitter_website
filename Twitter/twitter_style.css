@@ -223,8 +223,11 @@ div.icon_hover:hover{
     text-decoration:none;
     height: 35px;
     width: 80px;
-    margin-top: -45px;
-    margin-left: 400px;
+    float: left;
+    margin-top: -25px;
+    margin-left: 420px;
+    border: none;
+    font-size: 17px;
   }
   .tweet-button2:hover{
   background-color:rgb(27, 127, 194);
