@@ -122,6 +122,8 @@ article {
     background-color:rgb(35, 154, 233);
     color: rgb(255, 255, 255);
     border-radius: 25px;
+    border: none;
+    font-size: 20px;
     text-align:center;
     height: 50px;
     width: 90%;
@@ -189,7 +191,7 @@ div.icon_hover:hover{
   }
 
   .acc-img{
-    border-radius: 100%; 
+    border-radius: 50%; 
     float: left;
     width: 48px;
     height: 48px;
@@ -256,7 +258,18 @@ div.icon_hover:hover{
   .my_prof_name{
     padding-top:3px; 
     padding-left:10px;
-    float: left;
+    font-weight: bold;
+    margin-bottom: -14px;
+    margin-top: 9px;
+    /* float: left; */
+  }
+
+  .my_prof_name2{
+  padding-top:3px; 
+  padding-left:10px;
+  font-size: 15px;
+  color: #817e7e;
+    /* float: left;  */
   }
 
   .tweet{
@@ -290,6 +303,17 @@ div.icon_hover:hover{
     font-size: 15px;
     color: rgb(90, 88, 88);
     
+  }
+
+  .dialog{
+    width: 550px;
+    height: 285px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 70px;
+
+
+
   }
 
   
