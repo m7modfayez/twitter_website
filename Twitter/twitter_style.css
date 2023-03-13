@@ -162,8 +162,10 @@ div.icon_hover{
   /* margin-top: 33px;  */
   /* margin-right: 17px; */
   height: 60px;
-  width: 75%;
+  width:fit-content;
   padding-left: 10px;
+  padding-right: 25px;
+
   /* padding-top: 4px; */
 }
 div.icon_hover a{
@@ -524,7 +526,5 @@ div.icon_hover:hover{
   border: rgb(35, 154, 233);
   border-style: solid;
   border-width: 0 0 4px 0;
-  
-
  }
   
