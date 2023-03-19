@@ -413,8 +413,18 @@ div.icon_hover:hover{
     border-radius: 20px;
     margin-top: 70px;
     overflow: auto;
+
   }
-  /* .dialog:modal{} */
+  /* .dialog::after{
+    position: fixed;
+    content:'';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+  
 
   .closeBtn{
     cursor: pointer; 
@@ -425,6 +435,12 @@ div.icon_hover:hover{
     width: 32px;
     border-radius: 50%;
 
+  }
+  .closeBtn2{
+    float: left;
+    margin-left: -7px;
+    width: 35px;
+    margin-top: -8px;
   }
 
   .closeBtn:hover{
@@ -450,6 +466,11 @@ div.icon_hover:hover{
     top: 130px;
     left: 20px;
     border: 4px white solid;
+  }
+  .edit_Profile-pic{
+    top: 210px;
+    left: 20px;
+    width: 110px;
   }
 
   .editBTN{
@@ -528,3 +549,57 @@ div.icon_hover:hover{
   border-width: 0 0 4px 0;
  }
   
+ .edit_dialog{
+  margin-top: px;
+  width: 570px;
+  height: 620px;
+  border: none;
+  border-radius: 20px;
+ }
+
+.saveBTN{
+  float: right;
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  width: 65px;
+  height: 33px;
+  margin:-7px 3px 0px 0;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.saveBTN:hover{
+  background-color: #292828;
+}
+
+.inputs_list{
+  margin-top: 80px;
+}
+
+.edit_info{
+  margin-top: 20px;
+  /* border: #b1afaf 1px solid; */
+  height: 55px;
+  /* margin-left: -20px; */
+  border-radius: 5px;
+  padding: 4px 0 0 3px;
+  outline-color:#359dff ;
+}
+
+.inputs-edit{
+  width: 96%; 
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 4px;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.input_name{
+  color: #817d7d;
+  font-size: 12.9px;
+  margin: 3px 0 0 7px;
+  padding-top: 2px;
+}
