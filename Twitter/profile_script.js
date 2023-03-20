@@ -13,7 +13,7 @@ const editBTN = document.getElementById("editBTN");
 const edit_dialog = document.getElementById("edit_dialog");
 const input_edit = document.getElementById("input_edit");
 const input_name = document.getElementById("input_name");
-const name = document.getElementById("name");
+const naame = document.getElementById("name");
 const bio = document.getElementById("bio");
 const bio_name = document.getElementById("bio_name");
 const bio_text = document.getElementById("bio_text");
@@ -23,12 +23,20 @@ const location_text = document.getElementById("location_text");
 const site = document.getElementById("site");
 const site_name = document.getElementById("site_name");
 const site_link = document.getElementById("site_link");
+const saveBTN = document.getElementById("saveBTN");
+const profile_name = document.getElementById("profile_name");
+const Bio = document.getElementById("Bio");
+const Location = document.getElementById("Location");
+
 
 
 
 const followBtn = document.getElementById("follow_button");
 
-name.value = "Mahmoud Fayez";
+naame.value = "Mahmoud Fayez";
+bio_text.value = "CS@SHA";
+location_text.value = "Cairo, Egypt";
+
 
 followBtn.addEventListener('click', follow)
 function follow()  {
@@ -59,17 +67,31 @@ document.body.addEventListener('click', (event) => {
  });
 
  document.body.addEventListener('click', (event) => {
-    if(event.target == input_edit || event.target == name)
+    if(event.target == input_edit || event.target == naame)
     {
         console.log("aaa");
         input_edit.style.border = "#359dff 2px solid";
         input_name.style.color = "#359dff"
-        name.focus();
+        
+        bio.style.border = "#a7a7a7 1px solid";
+        bio_name.style.color = "#817d7d";
+        location_div.style.border = "#a7a7a7 1px solid";
+        location_name.style.color = "#817d7d";
+        site.style.border = "#a7a7a7 1px solid";
+        site_name.style.color = "#817d7d";
+        naame.focus();
     }
     else if(event.target == bio || event.target == bio_text)
     {
         bio.style.border = "#359dff 2px solid";
         bio_name.style.color = "#359dff"
+
+        input_edit.style.border = "#a7a7a7 1px solid";
+        input_name.style.color = "#817d7d";
+        location_div.style.border = "#a7a7a7 1px solid";
+        location_name.style.color = "#817d7d";
+        site.style.border = "#a7a7a7 1px solid";
+        site_name.style.color = "#817d7d";
         bio_text.focus();
 
     }
@@ -77,12 +99,26 @@ document.body.addEventListener('click', (event) => {
     {
         location_div.style.border = "#359dff 2px solid";
         location_name.style.color = "#359dff"
+
+        input_edit.style.border = "#a7a7a7 1px solid";
+        input_name.style.color = "#817d7d";
+        bio.style.border = "#a7a7a7 1px solid";
+        bio_name.style.color = "#817d7d";
+        site.style.border = "#a7a7a7 1px solid";
+        site_name.style.color = "#817d7d";
         location_text.focus();
     }
     else if(event.target == site || event.target == site_link)
     {
         site.style.border = "#359dff 2px solid";
         site_name.style.color = "#359dff"
+        input_edit.style.border = "#a7a7a7 1px solid";
+        input_name.style.color = "#817d7d";
+        bio.style.border = "#a7a7a7 1px solid";
+        bio_name.style.color = "#817d7d";
+        location_div.style.border = "#a7a7a7 1px solid";
+        location_name.style.color = "#817d7d";
+
         site_link.focus();
     }
    
@@ -204,3 +240,18 @@ function Fun() {
     tweetBtn2.style.opacity=0.6;
 
 };
+
+
+ //save Button in edit dialog   
+ saveBTN.addEventListener("click", () => {
+    if(naame.value == "" || bio_text.value == "" || location_text.value == "")
+    {
+        edit_dialog.close();
+        return;
+    }
+    profile_name.innerHTML = naame.value;
+    Bio.innerHTML = bio_text.value;
+    Location.innerHTML = location_text.value;
+    edit_dialog.close();
+
+ })

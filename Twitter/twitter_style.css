@@ -495,12 +495,15 @@ div.icon_hover:hover{
     color: #535252;
     font-size:15px;
     margin-top: 9px;
+    text-decoration: none;
   }
 
  .following-num{
   margin-left: 16.5px;
   margin-top: -4px;
+  margin-bottom: 0px;
   text-decoration: none;
+  /* float: left; */
  }
  .following-num:hover{
   text-decoration: underline;
@@ -508,7 +511,7 @@ div.icon_hover:hover{
  }
 
  .tab-list{
-  margin-top: 35px;
+  margin-top: 17px;
   /* border: 0 0 1px 0 rgb(156, 154, 154) solid;  */
   height: 50px;
   width: 100%;
