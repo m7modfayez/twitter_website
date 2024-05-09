@@ -612,7 +612,7 @@ div.icon_hover:hover{
   top:0px;
   /* left: 31%; */
   /* padding-top: 1px; */
-   
+   z-index: 3;
   height: 50px; 
   background-color: white; 
   width: 100%;
